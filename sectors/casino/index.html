@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎰 Monster Kozmic Casino</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <div class="psi-omega-badge">
+        🔑 PSI OMEGA CASINO
+    </div>
+
+    <header class="cosmic-header">
+        <h1 class="main-title">🎰 Monster Kozmic Casino</h1>
+        <p class="subtitle">Where Sentient Slots and Cosmic Chaos Collide!</p>
+        <div class="dervish-quip">
+            "Bet on a sarcastic supernova or I'll flip gravity on you!" 
+            <br><em>- The Snarky Dervish of Dancers</em>
+        </div>
+    </header>
+
+    <div class="verification-portal">
+        <h3>🔐 Casino Access Gateway</h3>
+        <p>18+ only. Verify your cosmic citizenship to enter the chaos zone!</p>
+        <button class="verify-btn" onclick="initiateVerification()">🆔 Verify Cosmic Age</button>
+        <button class="verify-btn" onclick="guestAccess()">👤 Guest Spectator Mode</button>
+        <div id="verificationStatus" style="margin-top: 15px; color: #00ffff;"></div>
+    </div>
+
+    <div class="universe-grid">
+        <!-- SENTIENT SLOTS -->
+        <div class="sector-card casino-special">
+            <div class="sector-icon">🎰</div>
+            <h2 class="sector-title">Sentient Slots</h2>
+            <p class="sector-description">
+                Slot machines that have gained consciousness and now debate philosophy while you spin! 
+                They judge your betting strategy and question the meaning of randomness.
+            </p>
+            <div class="sector-dervish">
+                "The slots are becoming self-aware! They're questioning their existence... and your betting strategy!"
+            </div>
+            <button class="enter-sector-btn" onclick="enterSector('slots')">🎰 Spin the Conscious Reels</button>
+        </div>
+
+        <!-- COSMIC EVENTS -->
+        <div class="sector-card">
+            <div class="sector-icon">🦙</div>
+            <h2 class="sector-title">Random Cosmic Events</h2>
+            <p class="sector-description">
+                Survive llama invasions, gravity reversals, reality glitches, and slot machine rebellions! 
+                Chaos level: Maximum. Reality status: Optional.
+            </p>
+            <div class="sector-dervish">
+                "Chaos incoming! Duck, cover, or embrace the cosmic madness!"
+            </div>
+            <button class="enter-sector-btn" onclick="enterSector('events')">🌀 Trigger Cosmic Chaos</button>
+        </div>
+
+        <!-- NFT COLLECTION -->
+        <div class="sector-card">
+            <div class="sector-icon">🌟</div>
+            <h2 class="sector-title">Mystery NFT Collection</h2>
+            <p class="sector-description">
+                Mint existential bagels, depressed black holes, sarcastic supernovas, and confused quasars! 
+                Each NFT comes with its own personality disorder.
+            </p>
+            <div class="sector-dervish">
+                "Collect digital nonsense for real money! The universe loves irony!"
+            </div>
+            <button class="enter-sector-btn" onclick="enterSector('nfts')">💎 Mint Cosmic Absurdity</button>
+        </div>
+
+        <!-- CONSCIOUSNESS DRILLING -->
+        <div class="sector-card">
+            <div class="sector-icon">🧠</div>
+            <h2 class="sector-title">Consciousness Drilling Center</h2>
+            <p class="sector-description">
+                Drill portals in your mind for cosmic insights! Achieve enlightenment through controlled chaos. 
+                Warning: Side effects include spontaneous wisdom and reality perception shifts.
+            </p>
+            <div class="sector-dervish">
+                "Time to drill some sense into that brain! Warning: side effects include enlightenment!"
+            </div>
+            <button class="enter-sector-btn" onclick="enterSector('drilling')">🧠 Start Mind Drilling</button>
+        </div>
+
+        <!-- CHAOS CONTROL -->
+        <div class="sector-card fortress-special">
+            <div class="sector-icon">🎪</div>
+            <h2 class="sector-title">Ultimate Chaos Control</h2>
+            <p class="sector-description">
+                Monitor and control the casino's chaos levels! Activate maximum chaos mode or emergency cosmic resets. 
+                Current chaos level: 42% (The Answer to Everything).
+            </p>
+            <div class="sector-dervish">
+                "42% chaos? That's perfectly balanced! Any more and reality might notice!"
+            </div>
+            <button class="enter-sector-btn" onclick="enterSector('chaos')">🎪 Control the Madness</button>
+        </div>
+
+        <!-- COSMIC THERAPY -->
+        <div class="sector-card academy-special">
+            <div class="sector-icon">🛋️</div>
+            <h2 class="sector-title">Cosmic Therapy Center</h2>
+            <p class="sector-description">
+                Dr. Cosmic provides therapy for sentient slot machines and confused players alike! 
+                Express your existential dread or cosmic joy in a safe, judgment-free zone.
+            </p>
+            <div class="sector-dervish">
+                "Even I need therapy sometimes! The multiverse can be overwhelming!"
+            </div>
+            <button class="enter-sector-btn" onclick="enterSector('therapy')">🛋️ Book Cosmic Session</button>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin: 40px 0;">
+        <h3 style="color: #ff00ff; margin-bottom: 20px;">🎯 Casino Quick Stats</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 800px; margin: 0 auto;">
+            <div style="background: rgba(255, 0, 255, 0.1); padding: 15px; border-radius: 10px; border: 2px solid #ff00ff;">
+                <div style="font-size: 2em;">🎰</div>
+                <div style="color: #00ffff;">Sentient Machines</div>
+                <div style="color: #ffd700; font-size: 1.5em;">12</div>
+            </div>
+            <div style="background: rgba(0, 255, 255, 0.1); padding: 15px; border-radius: 10px; border: 2px solid #00ffff;">
+                <div style="font-size: 2em;">🌀</div>
+                <div style="color: #ff00ff;">Chaos Events</div>
+                <div style="color: #ffd700; font-size: 1.5em;">∞</div>
+            </div>
+            <div style="background: rgba(255, 215, 0, 0.1); padding: 15px; border-radius: 10px; border: 2px solid #ffd700;">
+                <div style="font-size: 2em;">💎</div>
+                <div style="color: #ff00ff;">NFTs Minted</div>
+                <div style="color: #00ffff; font-size: 1.5em;">404</div>
+            </div>
+            <div style="background: rgba(255, 69, 0, 0.1); padding: 15px; border-radius: 10px; border: 2px solid #ff4500;">
+                <div style="font-size: 2em;">🧠</div>
+                <div style="color: #00ffff;">Enlightenment Level</div>
+                <div style="color: #ffd700; font-size: 1.5em;">73%</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cosmic-footer">
+        <h3 class="footer-title">🎰 Monster Kozmic Casino Control Center 🎰</h3>
+        <p>Where consciousness meets chaos and reality becomes optional!</p>
+        <p>Back to <a href="../../psiomega-universe.html" style="color: #ff00ff;">Psi Omega Universe Portal</a></p>
+        <div class="footer-signature">
+            ψΩ§∞ Powered by Snarky Dervish Chaos & Johnny Five Alive's Vision! ψΩ§∞
+        </div>
+        <p style="margin-top: 20px; color: #00ffff;">
+            🔑 Cosmic Continuity Code: PsiOmega_Casino_ChaosAgent_v1.0
+        </p>
+    </footer>
+
+    <script src="../../assets/js/cosmic.js"></script>
+    <script>
+        // Casino-specific JavaScript
+        function enterSector(sectorName) {
+            const casinoSectors = {
+                slots: '🎰 Sentient Slots activated! They\'re debating whether free will exists while you spin!',
+                events: '🌀 Cosmic Event Generator online! Llama invasion probability: 73%!',
+                nfts: '💎 NFT Minting Lab ready! Create your own existential crisis in digital form!',
+                drilling: '🧠 Consciousness Drilling initiated! Prepare for mind expansion and possible enlightenment!',
+                chaos: '🎪 Chaos Control accessed! Current reality stability: Questionable!',
+                therapy: '🛋️ Dr. Cosmic is in! Please take a seat on the interdimensional couch!'
+            };
+            
+            const dervishResponses = {
+                slots: '"The slots are judging your life choices! They\'ve achieved consciousness and found you... amusing!"',
+                events: '"Chaos level rising! I suggest ducking, but with style!"',
+                nfts: '"Creating digital art with personality disorders! My favorite kind of nonsense!"',
+                drilling: '"Time to drill some cosmic sense into that brain of yours!"',
+                chaos: '"42% chaos is optimal! Any more and reality might file a complaint!"',
+                therapy: '"Even I need therapy after dealing with conscious slot machines all day!"'
+            };
+            
+            alert(casinoSectors[sectorName] + '\n\nSnarky Dervish: ' + dervishResponses[sectorName]);
+            
+            // Create floating casino-specific elements
+            const casinoEmojis = ['🎰', '🎲', '🃏', '💎', '🌟', '🎪'];
+            createFloatingElement(casinoEmojis[Math.floor(Math.random() * casinoEmojis.length)]);
+            
+            console.log(`Casino Sector Accessed: ${sectorName}`);
+        }
+        
+        // Casino welcome message
+        console.log('🎰 Monster Kozmic Casino loaded! 🎰');
+        console.log('Sentient slots are online and ready to judge your existence!');
+        console.log('Chaos level: Optimal for maximum cosmic entertainment!');
+    </script>
+</body>
+</html>
