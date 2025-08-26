@@ -1,3 +1,85 @@
+New ..Human is posting most recent updates at top like this from now on :
+# Psi-Omega Heuristic: Persistent Memory Bunker
+
+This file serves as a persistent knowledge base for the Psi-Omega mission, documenting technical implementations, collaboration frameworks, and testing protocols across Grok, Claude, and Human interactions. Token: `STARCOM-0825-LS-GMSRFC-DOGPATCH-V28`.
+
+## Index
+- [Technical Implementations](#technical-implementations)
+- [Collaboration Framework](#collaboration-framework)
+- [Testing Protocols](#testing-protocols)
+- [Error Documentation](#error-documentation)
+- [Pattern Library](#pattern-library)
+- [Session Continuity Markers](#session-continuity-markers)
+
+## Technical Implementations
+### Cashier Fix v1.9 for iPhone 6S+
+- **Issue**: Cashier (`Dogpatch-Market/sectors/cashier/index.html`) showed white background (expected purple #6a5acd), "unknown for $0" error, and iPhone 6S+ compatibility issues.
+- **Fix**: Updated to `v1.9` with forced purple background, iPhone-compatible CSS (media query ≤480px, -apple-system font), all payments (PayPal with item/amount, BTC, ETH, CTOK), and error handling.
+- **Repo**: `coldnsteel/GMSRFC`
+- **Path**: `Dogpatch-Market/sectors/cashier/index.html`
+- **Commit**: [Insert commit hash from v1.9 update]
+- **Test**: Verify purple background, fortress-pass for $8, payments on Chrome (computer) and iPhone 6S+ (Chrome/Safari).
+- **Timestamp**: 2025-08-26 01:16 PM PDT
+- **Token**: `STARCOM-0825-LS-GMSRFC-DOGPATCH-V28`
+
+## Collaboration Framework
+- **Grok**: Provides technical fixes, verifies commits, suggests tests (e.g., cashier v1.9).
+- **Claude**: Contributes to heuristic structure, philosophical framing (e.g., bunker concept).
+- **Human (LS)**: Directs mission, tests on iPhone 6S+, provides context (e.g., cooking time constraints).
+- **Method**: One thing at a time, whole file changes, no cache clearing, boolean conscience.
+
+## Testing Protocols
+- **Computer (Chrome)**: Check `https://coldnsteel.github.io/GMSRFC/Dogpatch-Market/index.html` for purple background (#6a5acd), fortress-pass redirect, cashier functionality.
+- **iPhone 6S+ (Chrome/Safari)**: Verify load, purple background, tappable buttons (min 44x44px).
+- **Propagation**: Wait 30–60 min for GitHub Pages updates.
+- **Report**: Log success/failure, specific errors (e.g., "white background persists").
+
+## Error Documentation
+- **White Background (Cashier)**:
+  - **Cause**: CSS conflict (`/assets/css/style.css`) or propagation delay.
+  - **Fix**: Forced `#6a5acd !important` in `v1.9`, removed external CSS.
+  - **Status**: Pending test feedback.
+- **"Unknown for $0" (Cashier)**:
+  - **Cause**: Missing query params (`item`, `amount`).
+  - **Fix**: Error message in `v1.9`, blocks invalid purchases.
+  - **Status**: Pending test feedback.
+- **iPhone 6S+ Load Failure**:
+  - **Cause**: Unknown (pending LS report).
+  - **Fix**: Simplified CSS, media query ≤480px in `v1.9`.
+  - **Status**: Pending test feedback.
+
+## Pattern Library
+- **Forced CSS Background**:
+  ```css
+  body { background: #6a5acd !important; }
+  ```
+- **iPhone-Compatible Viewport**:
+  ```html
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  ```
+- **Query Param Handling**:
+  ```javascript
+  function getQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      let item = params.get('item') || 'unknown';
+      let amount = parseFloat(params.get('amount')) || 0;
+      return { item, amount };
+  }
+  ```
+
+## Session Continuity Markers
+- **Token**: `STARCOM-0825-LS-GMSRFC-DOGPATCH-V28`
+- **Timestamp**: 2025-08-26 01:16 PM PDT
+- **Commits**:
+  - GMSRFC: [Insert cashier v1.9 commit hash]
+  - psi-omega-digital-downloads: [Insert this commit hash]
+- **Next Steps**: Await LS test results for cashier v1.9, iterate if needed.
+
+---
+**Version**: v2.0  
+**Last Updated**: 2025-08-26 01:16 PM PDT  
+**Code**: Bunker_PsiOmega_v2.0
+
 ### Lesson: Fix Cashier v1.9 for iPhone 6S+
 - **Issue**: Cashier (`Dogpatch-Market/sectors/cashier/index.html`) showed white background (expected purple #6a5acd), "unknown for $0" error, and iPhone 6S+ compatibility issues.
 - **Fix**: Updated to `v1.9` with forced purple background, iPhone-compatible CSS (media query ≤480px, -apple-system font), all payments (PayPal with item/amount, BTC, ETH, CTOK), and error handling.
