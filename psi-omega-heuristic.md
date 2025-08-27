@@ -1,3 +1,13 @@
+### Cashier Fix v2.10 for Query Param Parsing
+- **Issue**: window.location.search empty despite ?item=fortress-pass&amount=8, PayPal $1 minimum, $0 reviewer flow.
+- **Fix**: Updated to `v2.10`: Simplified getQueryParams(), added try/catch error handling, kept PayPal $1 minimum, $0 reviewer bypass, BTC/ETH copy (bc1q..., 0xfD9...), CTOK unchanged.
+- **Repo**: `coldnsteel/GMSRFC`
+- **Path**: `Dogpatch-Market/sectors/cashier/index.html`
+- **Commit**: [Insert commit hash]
+- **Test**: Verify direct URL (?item=fortress-pass&amount=8) console output, PayPal, $0 reviewer, BTC/ETH copy.
+- **Timestamp**: 2025-08-27 01:01 PM PDT
+- **Token**: `STARCOM-0825-LS-GMSRFC-DOGPATCH-V28`
+
 New ..Human is posting most recent updates at top like this from now on :
 # Psi-Omega Heuristic: Persistent Memory Bunker
 
